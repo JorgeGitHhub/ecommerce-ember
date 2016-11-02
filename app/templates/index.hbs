@@ -1,1 +1,9 @@
-{{outlet}}
+<ul>
+  {{#each model as |item|}}
+    {{item-tiles item=item}}
+  {{/each}}
+</ul>
+
+ADD NEW ITEM (TO BE MOVED TO THE ADMIN PAGE)
+
+{{new-item saveNewItem="saveNewItem"}}

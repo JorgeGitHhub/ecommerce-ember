@@ -6,8 +6,9 @@ export default DS.Model.extend({
   description: DS.attr(),
   color: DS.attr(),
   price: DS.attr(),
-  category: DS.hasMany('category', { async: true }),
-  reviews: DS.attr(),
+  // reviews: DS.hasMany('review', { async: true }),
+  // rating: DS.attr(),
   featured: DS.attr(),
-  sale: DS.attr()
+  sale: DS.attr(),
+  category: DS.attr(),
 });
