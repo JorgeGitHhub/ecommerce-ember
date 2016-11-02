@@ -38,3 +38,12 @@ body {
   font-family: 'Fjalla One', sans-serif;
   font-size: 3em;
 }
+
+/*footer*/
+
+.footer {
+  margin-top: 20px;
+  min-height: 300px;
+  background-color: #191716;
+  color: #E0E2DB;
+}
