@@ -1,9 +1,45 @@
-<ul>
-  {{#each model as |item|}}
-    {{item-tiles item=item}}
-  {{/each}}
-</ul>
+<div class="row">
+    {{#each model as |item|}}
 
-ADD NEW ITEM (TO BE MOVED TO THE ADMIN PAGE)
+      {{item-featured item=item}}
 
-{{new-item saveNewItem="saveNewItem"}}
+    {{/each}}
+</div>
+
+
+<div class="row fake-blog">
+  <div class="col-md-6">
+    <img src="https://images.unsplash.com/photo-1476905778601-2e68ba72d354?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=7d40747828ddb305d011f20cfed030bb" class="img-responsive" alt="nice travel image" />
+
+  </div>
+
+  <div class="col-md-6">
+    <h2>FIRST TIME IN PERU? 8 BEST THINGS TO DO IN THE COUNTRY</h2>
+    <p>
+      Good. You are here. Now, hurry up and get your tickets, Peru is becoming a mainstream destination and you should make sure you visit it before everyone else does! There are a million things to do in Peru starting from a beach vacation and sand boarding to hiking mountains and, of course, Machu Picchu! [...]
+    </p>
+    <div class="row">
+      <div class="col-md-4">
+         <p class="text-right">
+           June 6th, 2016
+         </p>
+      </div>
+      <div class="col-md-4">
+         | Peru, South America |
+      </div>
+      <div class="col-md-4">
+        <p class="text-left">
+          2 comments
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+<!-- {{new-item saveNewItem="saveNewItem"}} -->

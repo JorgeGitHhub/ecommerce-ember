@@ -1,8 +1,12 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model() {
-    return this.store.findAll('item');
+  model: function() {
+    return this.store.query('item', {
+      orderBy: 'featured',
+      equalTo: 'true',
+      limitToLast: 3
+    });
   },
   actions: {
   saveNewItem(params) {

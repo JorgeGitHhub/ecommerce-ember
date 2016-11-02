@@ -39,11 +39,53 @@ body {
   font-size: 3em;
 }
 
+/*display items*/
+
+.featured-item {
+  min-height: 300px;
+}
+
+.featured-content h3 {
+  background-color: rgba(230,175,46, 0.6);
+  /*color: white;*/
+  padding: 10px;
+  align-content: flex-end;
+}
+
+/*blogpost*/
+
+.fake-blog {
+  margin-top: 20px;
+}
+
+.fake-blog h2 {
+  font-family: 'Fjalla One', sans-serif;
+}
+
 /*footer*/
 
 .footer {
-  margin-top: 20px;
-  min-height: 300px;
+  margin-top: 50px;
+  min-height: 250px;
   background-color: #191716;
   color: #E0E2DB;
 }
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-left {
+  text-align: left;
+}
+
+.footer-content {
+  padding-top: 50px;
+  font-size: 1.5em;
+}
+
+.login {
+  padding-right: 5px;
+}
+
+/*https://coolors.co/191716-aaaaaa-ece2d0-e6af2e-e0e2db*/
