@@ -1,7 +1,13 @@
 The best clothing around <br>
 
+<ul>
+
+
 {{#each model as |item|}}
 
-  <!-- {{clothes-tile item=item}} -->
-  {{item.name}} <br>
+  {{item-tiles item=item}}
+
 {{/each}}
+</ul>
+
+{{display-cart}}
