@@ -1,3 +1,14 @@
-Welcome Admin
-<hr>
+<div class="row category-description">
+  <h1>Admin Panel</h1>
+  <h4>Edit or Delete Existing Products:</h4>
+</div>
+
+{{#each model as |item|}}
+  {{admin-tile item=item}}
+{{/each}}
+
+<div class="row category-description">
+  <h4>Upload New Items:</h4>
+</div>
+
 {{new-item saveNewItem="saveNewItem"}}

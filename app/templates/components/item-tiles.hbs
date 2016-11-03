@@ -1,4 +1,10 @@
-<li>
-  {{#link-to 'item' item.id}}{{item.name}}{{/link-to}} /  <button class="btn btn-warning" {{action 'addToCart' item}}>Add To Cart</button>
-
-</li>
+<div class="col-md-3">
+  <div class="wrap-items">
+    <img src="{{item.image}}" alt="item image" class="img-responsive image-tile"/>
+    <div class="text-center">
+      <h3>{{#link-to 'item' item.id}}{{item.name}}{{/link-to}}</h3>
+      <p>${{item.price}}</p>
+      <p><button class="btn btn-warning" {{action 'addToCart' item}}>Add To Cart</button></p>
+    </div>
+  </div>
+</div>

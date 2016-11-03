@@ -1,13 +1,21 @@
-The best clothing around <br>
+<div class="row category-description">
+  <h3>High Quality Travel Clothes.</h3>
+  <p> Travel clothing for stress-free travel. Lightweight, packable and wrinkle-resistant, made with the active traveler in mind. </p>
+  <ul>
+    <li>Versatility - items with multiple options.</li>
+    <li>Lightweight - for light packing and multiple mix and match opportunities.</li>
+    <li>Breathable, moisture-wicking - maximize comfort in hot environments or while engaging in active pursuits. Plus they'll dry quickly when caught in an unexpected rainstorm.</li>
+    <li>Stretch for comfort.</li>
+  </ul>
+  <h4>SHOP OUR CURATED SELECTION:</h4>
+</div>
 
-<ul>
+<div class="row">
+  {{#each model as |item|}}
+    {{item-tiles item=item}}
+  {{/each}}
+</div>
 
 
-{{#each model as |item|}}
-
-  {{item-tiles item=item}}
-
-{{/each}}
-</ul>
 
 {{display-cart}}

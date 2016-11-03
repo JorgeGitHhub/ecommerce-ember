@@ -1,1 +1,12 @@
-{{outlet}}
+<div class="row category-description">
+  <h3>Extremely Functional Luggage, Innovative Travel Products.</h3>
+  <p> Luggage today became a burden to travelers. We live in an age of technology and innovation, and luggage brands seemed to skip this wave. Our selection of luggage solely focuses on extreme functionality; travel products that eliminate the hassles of travel. </p>
+
+  <h4>SHOP OUR CURATED SELECTION:</h4>
+</div>
+
+<div class="row">
+  {{#each model as |item|}}
+    {{item-tiles item=item}}
+  {{/each}}
+</div>

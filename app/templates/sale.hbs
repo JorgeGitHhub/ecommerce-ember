@@ -1,1 +1,12 @@
-{{outlet}}
+<div class="row category-description">
+  <h3>Get Hand-Picked Deals.</h3>
+  <p> Sale Event Up To 25% Off. 48 hours only. </p>
+
+  <h4>SHOP OUR DISCOUNTED ITEMS:</h4>
+</div>
+
+<div class="row">
+  {{#each model as |item|}}
+    {{item-tiles item=item}}
+  {{/each}}
+</div>
