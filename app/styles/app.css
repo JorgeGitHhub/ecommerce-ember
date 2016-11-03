@@ -88,4 +88,14 @@ body {
   padding-right: 5px;
 }
 
+.footer a {
+  /*font-family: 'Fjalla One', sans-serif;*/
+  color: #E0E2DB;
+  /*font-size: 8em;*/
+}
+
+.footer a:hover {
+  text-decoration: none;
+}
+
 /*https://coolors.co/191716-aaaaaa-ece2d0-e6af2e-e0e2db*/
