@@ -11,6 +11,10 @@ Router.map(function() {
   this.route('clothes');
   this.route('item', {path: 'item/:item_id'});
   this.route('cart');
+  this.route('luggage');
+  this.route('travelgear');
+  this.route('accessories');
+  this.route('sale');
 });
 
 export default Router;

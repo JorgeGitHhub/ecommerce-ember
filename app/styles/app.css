@@ -42,20 +42,40 @@ body {
 /*display items*/
 
 .featured-item {
-  min-height: 300px;
+  overflow: hidden;
+  height: 300px;
 }
 
-.featured-content h3 {
+/*.featured-image {
+  display: inline-block;
+  position: relative;
+}
+*/
+
+.featured-item h3 {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 100%;
+}
+
+.featured-item h3 span {
+  font: bold 24px/45px Helvetica, Sans-Serif;
+  letter-spacing: -1px;
+  background: rgba(230,175,46, 0.6);
+  padding: 10px;
+}
+
+/*.featured-content h3 {
   background-color: rgba(230,175,46, 0.6);
-  /*color: white;*/
   padding: 10px;
   align-content: flex-end;
-}
+}*/
 
 /*blogpost*/
 
 .fake-blog {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .fake-blog h2 {
