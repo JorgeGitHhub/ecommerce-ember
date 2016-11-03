@@ -1,0 +1,59 @@
+<!-- {{#if updateItemForm}} -->
+  <h4>Update {{item.name}}</h4>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="name">Item Name:</label>
+        {{input value=name id="name" class="form-control"}}
+      </div>
+
+      <div class="form-group">
+        <label for="image">Item Image (Paste URL):</label>
+        {{input value=image id="image" class="form-control"}}
+      </div>
+
+      <div class="form-group">
+        <label for="description">Item Description: </label>
+        {{input value=description id="description" class="form-control"}}
+      </div>
+
+      <div class="form-group">
+        <label for="color">Item's color: </label>
+        {{input value=color id="color" class="form-control"}}
+      </div>
+
+      <div class="form-group">
+        <label for="price">Price:</label>
+        {{input value=price id="price" class="form-control"}}
+      </div>
+
+      <div class="form-group">
+        <label for="category">Choose a category:</label>
+        <select class="form-control" id="category" onchange={{action "updateCategoryValue" value="target.value"}} >
+          <option value="luggage">Luggage</option>
+          <option value="clothes">Clothes</option>
+          <option value="travel-gear">Travel Gear</option>
+          <option value=" " selected="selected">   </option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="featured">Featured:</label>
+        <select class="form-control" id="featured" onchange={{action "updateFeaturedValue" value="target.value"}} >
+          <option value="true" selected="selected">Yes</option>
+          <option value="false">No</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="sale">Sale:</label>
+        <select class="form-control" id="sale" onchange={{action "updateSaleValue" value="target.value"}} >
+          <option value="true" selected="selected">Yes</option>
+          <option value="false">No</option>
+        </select>
+      </div>
+
+      <button class="btn btn-default" {{action 'update' item}}>Upload New Item</button>
+    </form>
+  </div>
+<!-- {{/if}} -->

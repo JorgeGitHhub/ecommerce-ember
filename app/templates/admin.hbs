@@ -1,13 +1,13 @@
 <div class="row category-description">
-  <h1>Admin Panel</h1>
+  <h1 class="admin-panel">Admin Panel</h1>
   <h4>Edit or Delete Existing Products:</h4>
 </div>
 
 {{#each model as |item|}}
-  {{admin-tile item=item}}
+  {{admin-tile item=item update="update"}}
 {{/each}}
 
-<div class="row category-description">
+<div class="row category-description new-items">
   <h4>Upload New Items:</h4>
 </div>
 

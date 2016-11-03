@@ -127,4 +127,17 @@ body {
   text-decoration: none;
 }
 
+/*admin panel*/
+
+.admin-tile {
+  margin-bottom: 15px;
+}
+
+.new-items {
+  margin-top: 50px;
+}
+
+.admin-panel {
+  margin-bottom: 40px;
+}
 /*https://coolors.co/191716-aaaaaa-ece2d0-e6af2e-e0e2db*/

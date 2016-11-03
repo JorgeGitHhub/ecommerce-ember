@@ -1,9 +1,17 @@
-<div class="row">
-  <div class="col-md-6">
-    Item: <h4>{{#link-to 'item' item.id}}{{item.name}}{{/link-to}}<small>, Category : {{item.category}}</small></h4>
+<div class="row admin-tile">
+  <div class="col-md-10">
+    <h4><small>Item: </small>{{#link-to 'item' item.id}}{{item.name}}{{/link-to}}<small>, Category : {{item.category}}</small></h4>
   </div>
-  <div class="col-md-6">
-    <button class="btn btn-success"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></button>
+  <div class="col-md-2 text-right">
+
+    <button class="btn btn-success" {{action 'showForm' item}} type="button"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></button>
+
     <button class="btn btn-danger"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
   </div>
+</div>
+
+<div class="row">
+{{#if updateItemForm}}
+  {{update-item item=item update="update"}}
+{{/if}}
 </div>
